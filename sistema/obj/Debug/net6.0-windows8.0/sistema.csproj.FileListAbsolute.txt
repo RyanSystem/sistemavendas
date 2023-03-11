@@ -1,0 +1,14 @@
+C:\Sistema\sistema\obj\Debug\net6.0-windows8.0\sistema.csproj.AssemblyReference.cache
+C:\Sistema\sistema\obj\Debug\net6.0-windows8.0\sistema.csproj.ResolveComReference.cache
+C:\Sistema\sistema\obj\Debug\net6.0-windows8.0\sistema.frm_cad_cli.resources
+C:\Sistema\sistema\obj\Debug\net6.0-windows8.0\sistema.frm_categoria.resources
+C:\Sistema\sistema\obj\Debug\net6.0-windows8.0\sistema.frm_cad_pro.resources
+C:\Sistema\sistema\obj\Debug\net6.0-windows8.0\sistema.frm_tela_principal.resources
+C:\Sistema\sistema\obj\Debug\net6.0-windows8.0\sistema.DAL.Properties.Resources.resources
+C:\Sistema\sistema\obj\Debug\net6.0-windows8.0\sistema.csproj.GenerateResource.cache
+C:\Sistema\sistema\obj\Debug\net6.0-windows8.0\sistema.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sistema\sistema\obj\Debug\net6.0-windows8.0\sistema.AssemblyInfoInputs.cache
+C:\Sistema\sistema\obj\Debug\net6.0-windows8.0\sistema.AssemblyInfo.cs
+C:\Sistema\sistema\obj\Debug\net6.0-windows8.0\sistema.csproj.CoreCompileInputs.cache
+C:\Sistema\sistema\obj\Debug\net6.0-windows8.0\Interop.Accessibility.dll
+C:\Sistema\sistema\obj\Debug\net6.0-windows8.0\Interop.AccessibilityCplAdminLib.dll

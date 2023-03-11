@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_sistema" Class="sistemaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.categoria" Member="categoria">
+    <Type Name="categoria">
+      <Column Name="id_categoria" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cat_descircao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="categoria_tb_produto" Member="tb_produto" ThisKey="id_categoria" OtherKey="id_categoria" Type="tb_produto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_cliente" Member="tb_cliente">
+    <Type Name="tb_cliente">
+      <Column Name="id_cliente" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cli_nome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="cli_apelido" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="cli_endereco" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cli_cep" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="cli_cidade" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="tb_cliente_tb_ordem_compra" Member="tb_ordem_compra" ThisKey="id_cliente" OtherKey="id_cliente" Type="tb_ordem_compra" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_ordem_compra" Member="tb_ordem_compra">
+    <Type Name="tb_ordem_compra">
+      <Column Name="id_ordem" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_cliente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_produto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tb_cliente_tb_ordem_compra" Member="tb_cliente" ThisKey="id_cliente" OtherKey="id_cliente" Type="tb_cliente" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_produto" Member="tb_produto">
+    <Type Name="tb_produto">
+      <Column Name="id_produto" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pro_nome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pro_preco" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pro_marca" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="id_categoria" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="categoria_tb_produto" Member="categoria" ThisKey="id_categoria" OtherKey="id_categoria" Type="categoria" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="sistema">
+  <DataContextMoniker Name="/sistemaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a98b0b22-b119-4c46-b10d-368633cf6e75" absoluteBounds="0.75, 1.25, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/sistemaDataContext/categoria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="352e1eac-1d8f-46ac-8ec4-7a0fcdad4499" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4658425e-65f0-43ae-8696-9052a77e8dcb" absoluteBounds="0.75, 3.875, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/sistemaDataContext/tb_cliente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e783042a-9091-4dcc-b8d2-39ceaba3eb22" absoluteBounds="0.765, 4.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="db8d969a-21d5-4644-a64c-0d9d251b446a" absoluteBounds="3.5, 4.25, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/sistemaDataContext/tb_ordem_compra" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f21f237c-f0c0-4d82-ac27-905bf3bda4b2" absoluteBounds="3.515, 4.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1c9a33f2-3875-46f1-9bcf-8d895d59abd7" absoluteBounds="3.5, 0.875, 2, 1.7708968098958333">
+      <DataClassMoniker Name="/sistemaDataContext/tb_produto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c7b1f503-21c7-4735-a3fd-4015aebeda39" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 4.94314697265625); (3.5 : 4.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/sistemaDataContext/tb_cliente/tb_cliente_tb_ordem_compra" />
+      <nodes>
+        <classShapeMoniker Id="4658425e-65f0-43ae-8696-9052a77e8dcb" />
+        <classShapeMoniker Id="db8d969a-21d5-4644-a64c-0d9d251b446a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.84699625651042); (3.5 : 1.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/sistemaDataContext/categoria/categoria_tb_produto" />
+      <nodes>
+        <classShapeMoniker Id="a98b0b22-b119-4c46-b10d-368633cf6e75" />
+        <classShapeMoniker Id="1c9a33f2-3875-46f1-9bcf-8d895d59abd7" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

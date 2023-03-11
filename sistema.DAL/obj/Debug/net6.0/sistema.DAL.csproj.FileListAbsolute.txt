@@ -1,0 +1,5 @@
+C:\Sistema\sistema.DAL\obj\Debug\net6.0\sistema.DAL.csproj.AssemblyReference.cache
+C:\Sistema\sistema.DAL\obj\Debug\net6.0\sistema.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sistema\sistema.DAL\obj\Debug\net6.0\sistema.DAL.AssemblyInfoInputs.cache
+C:\Sistema\sistema.DAL\obj\Debug\net6.0\sistema.DAL.AssemblyInfo.cs
+C:\Sistema\sistema.DAL\obj\Debug\net6.0\sistema.DAL.csproj.CoreCompileInputs.cache
